@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="swiggylogo.png">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="offers.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Left Side Menu -->
+        <div class="nav-left">
+            <div class="logo">
+                <img src="swiggylogo.png" alt="Swiggy Logo">
+                <a href="index.html">Swiggy</a>
+            </div>
+
+            <div class="dropdown">
+                <button>Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Orders</a>
+                    <a href="#">Restaurants</a>
+                    <a href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Menu -->
+        <div class="nav-right">
+            <a href="#"><i class="fa-solid fa-percent"></i><a href="offers.html">Offers</a>
+            <a href="#"><i class="fa-brands fa-hire-a-helper"></i> <a href="help.html">Help</a>
+            <a href="#"><i class="fa-solid fa-user"></i> <a href="signin.html">Sign In</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> <a href="cart.html">Cart</a>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- Responsive Hamburger Menu -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </div>
+
+
+<div class="offers-container">
+    <h1 class="title">Exclusive Offers</h1>
+    
+    <div class="offers-grid">
+        <div class="offer-card" id="discount-offer">
+            <h2>Flat 50% Off!</h2>
+            <p>Enjoy a massive 50% discount on your favorite restaurants. Limited time only!</p>
+        </div>
+
+        <div class="offer-card" id="hotel-offer">
+            <h2>Hotel Special Offer</h2>
+            <p>Get up to 40% off on your first order from premium hotels near you.</p>
+        </div>
+
+        <div class="offer-card" id="festival-offer">
+            <h2>Festive Feast</h2>
+            <p>Celebrate this festival with delicious meals at discounted prices. Hurry up!</p>
+        </div>
+
+        <div class="offer-card" id="coupon-offer">
+            <h2>Coupon Deals</h2>
+            <p>Use code <b>SAVE20</b> to get an additional 20% off on all food orders.</p>
+        </div>
+    </div>
+</div>
+
+    
+    <script>
+        $(document).ready(function() {
+            $('.offer-card').hover(
+                function() {
+                    $(this).css('transform', 'scale(1.05)');
+                }, 
+                function() {
+                    $(this).css('transform', 'scale(1)');
+                }
+            );
+        });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            var leftMenu = document.querySelector(".nav-left");
+            var rightMenu = document.querySelector(".nav-right");
+            if (leftMenu.style.display === "flex") {
+                leftMenu.style.display = "none";
+                rightMenu.style.display = "none";
+            } else {
+                leftMenu.style.display = "flex";
+                rightMenu.style.display = "flex";
+            }
+        }
+    </script>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Swiggy Blog</a></li>
+                <li><a href="#">Investors</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Help & Support</h3>
+            <ul>
+                <li><a href="help.html">FAQs</a></li>
+                <li><a href="help.html">Customer Support</a></li>
+                <li><a href="#">Partner With Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Swiggy. All Rights Reserved.</p>
+        <p>Developed By Deepika Reddy</p>
+    </div>
+</footer>
+
+</body>
+</html>

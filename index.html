@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="swigggylogo.png">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Left Side Menu -->
+        <div class="nav-left">
+            <div class="logo">
+                <img src="swigggylogo.png" alt="Swiggy Logo">
+                <a href="index.html">Swiggy</a>
+            </div>
+
+            <div class="dropdown">
+                <button>Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Orders</a>
+                    <a href="#">Restaurants</a>
+                    <a href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Menu -->
+        <div class="nav-right">
+            <a href="#"><i class="fa-solid fa-percent"></i><a href="offers.html">Offers</a>
+            <a href="#"><i class="fa-brands fa-hire-a-helper"></i> <a href="help.html">Help</a>
+            <a href="#"><i class="fa-solid fa-user"></i> <a href="signin.html">Sign In</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> <a href="cart.html">Cart</a>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- Responsive Hamburger Menu -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+    </div>
+    <!-- Home page content -->
+    <div class="wish">
+        <h2>What’s on your mind?</h2>
+        <div class="food-container">
+            <div class="food-item">
+                <img src="pizzaimage.jpeg" alt="Pizza">
+                <h3>Delicious Pizza</h3>
+                <p>₹299</p>
+            </div>
+            <div class="food-item">
+                <img src="burger image.jpeg" alt="Burger">
+                <h3>Cheese Burger</h3>
+                <p>₹199</p>
+            </div>
+            <div class="food-item">
+                <img src="pastaimage.jpeg" alt="Pasta">
+                <h3>Creamy Pasta</h3>
+                <p>₹249</p>
+            </div>
+            <div class="food-item">
+                <img src="icecreamimage.jpeg" alt="Ice Cream">
+                <h3>Choco Ice Cream</h3>
+                <p>₹149</p>
+            </div>
+        </div>
+    </div>
+    <div class="Home-content">
+        <h2>Discover the Best Food & Dining</h2>
+        <div class="home-container">
+            <div class="home-item">
+                <img src="best place to eat.jpeg" alt="Best Place to Eat">
+                <h3>Best Places to Eat</h3>
+                <p>Explore the top-rated places to enjoy your favorite meals.</p>
+            </div>
+            <div class="home-item">
+                <img src="best cusinie to eat.jpeg" alt="Best Cuisines">
+                <h3>Best Cuisines Near Me</h3>
+                <p>Find the most loved cuisines in your area.</p>
+            </div>
+            <div class="home-item">
+                <img src="online delivery images.jpeg" alt="Online Delivery">
+                <h3>Restaurants with Online Food Delivery</h3>
+                <p>Get food delivered to your doorstep, hassle-free.</p>
+            </div>
+            <div class="home-item">
+                <img src="near me.jpeg" alt="Explore Restaurants">
+                <h3>Explore Every Restaurant Near Me</h3>
+                <p>Discover new places and try different flavors.</p>
+            </div>
+        </div>
+    </div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>Swiggy is your go-to food delivery service, bringing delicious meals from your favorite restaurants right to your doorstep.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: support@swiggy.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Address: Bangalore, India</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Swiggy. All rights reserved.</p>
+        <p>Developed By Deepika Reddy</p>
+    </div>
+</footer>
+
+
+    <script>
+        function toggleMenu() {
+            var leftMenu = document.querySelector(".nav-left");
+            var rightMenu = document.querySelector(".nav-right");
+            if (leftMenu.style.display === "flex") {
+                leftMenu.style.display = "none";
+                rightMenu.style.display = "none";
+            } else {
+                leftMenu.style.display = "flex";
+                rightMenu.style.display = "flex";
+            }
+        }
+    </script>
+    
+    
+
+</body>
+</html>

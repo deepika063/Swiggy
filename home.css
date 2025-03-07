@@ -1,0 +1,203 @@
+/* Wishlist Section */
+.wish {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff7f0;
+}
+
+/* "What's on your mind?" Header */
+.wish h2 {
+    font-size: 32px;
+    color: #ff5200;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Food Items Grid */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Food Item Card */
+.food-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Food Image */
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.food-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Food Name */
+.food-item h3 {
+    font-size: 20px;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Food Price */
+.food-item p {
+    font-size: 18px;
+    color: #ff5200;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Arrival Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .food-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wish h2 {
+        font-size: 28px;
+    }
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Home Content Section */
+.Home-content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff3e0;
+}
+
+/* Section Title */
+.Home-content h2 {
+    font-size: 32px;
+    color: #ff5200;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Home Items Grid */
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Home Item Card */
+.home-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Home Item Image */
+.home-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.home-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Item Title */
+.home-item h3 {
+    font-size: 20px;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Item Description */
+.home-item p {
+    font-size: 16px;
+    color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Arrival Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .home-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Home-content h2 {
+        font-size: 28px;
+    }
+}
