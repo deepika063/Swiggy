@@ -1,47 +1,114 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    
+    
+    justify-content: center;  /* Centers form horizontally */
+    align-items: center;  /* Centers form vertically */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 
+
+/* Centered Help Container */
 .help-container {
+    background: #ff5f6d;
+    border-radius: 15px;
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
     text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
 }
 
+/* Title Styling */
 .title {
-    font-size: 2em;
+    font-size: 24px;
+    font-weight: 600;
     color: #333;
+    margin-bottom: 10px;
 }
 
-.help-form {
-    display: flex;
-    flex-direction: column;
+.help-container p {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.help-form label {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input, Select & Textarea - White Background */
+.help-form input,
+.help-form select,
+.help-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    background: white;  /* White background */
+    color: black;  /* Black text */
     align-items: center;
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
+/* Placeholder Color */
+.help-form input::placeholder,
+.help-form textarea::placeholder {
+    color: #666;
+    opacity: 0.8;
 }
 
-input, select, textarea {
-    width: 80%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Focus Effects */
+.help-form input:focus,
+.help-form select:focus,
+.help-form textarea:focus {
+    background: #f3f3f3;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
+/* Button Styling */
 button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #3366ff;
+    background: #ff5f6d;
     color: white;
     border: none;
+    padding: 12px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #0033cc;
+    background: #e64a5a;
+    transform: scale(1.05);
+}
+
+/* Animation for the form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
